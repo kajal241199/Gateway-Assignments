@@ -14,8 +14,8 @@ namespace SignupWithLogin.Custom_Validation
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             DateTime _birthJoin = Convert.ToDateTime(value);
-            DateTime minDate = Convert.ToDateTime("01-25-1970");
-            DateTime maxDate = Convert.ToDateTime("01-25-1998");
+            DateTime minDate = Convert.ToDateTime("01-25-1960");
+            DateTime maxDate = Convert.ToDateTime("01-25-1990");
 
             if (_birthJoin > minDate && _birthJoin < maxDate)
                 return ValidationResult.Success;
