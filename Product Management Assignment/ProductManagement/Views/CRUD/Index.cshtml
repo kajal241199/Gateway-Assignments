@@ -1,0 +1,98 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<ProductManagement.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+
+<p>
+    @using (Html.BeginForm("Index", "CRUD", FormMethod.Get))
+    {
+        <b> Search By:</b>
+        @Html.RadioButton("searchBy", " Name")<text>Name</text>
+        @Html.RadioButton("searchBy", " Category",true)<text>Category</text>
+        <br />
+        @Html.TextBox("search")<input type="submit" value="Search" />
+
+    }
+
+
+
+
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Name", "Index", new { sortBy = ViewBag.SortEmpnameParameter, SearchBy = Request.QueryString["searchBy"], search = Request["search"] })
+        </th>
+        <th>
+            @Html.ActionLink("Category", "Index", new { sortBy = ViewBag.SortEmpnameParameter, SearchBy = Request.QueryString["searchBy"], search = Request["search"] })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Price)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().Short_Description)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.First().Small_Image)
+
+        </th>
+        <th>
+            Actions
+
+        </th>
+
+        <th></th>
+    </tr>
+    @if (Model.Count() == 0)
+    {
+        <tr>
+            <td colspan="6"> No rows Match search criteria</td>
+        </tr>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Short_Description)
+                </td>
+
+                <td>
+                    <img src="@Url.Content(item.Small_Image)" width="100" height="100" />
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    }
+
+
+</table>
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, searchBy = Request.QueryString["searchBy"], search = Request.QueryString["search"], sortBy = Request["sortBy"] }),
+new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayPageCountAndCurrentLocation = true })

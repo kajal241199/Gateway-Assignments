@@ -1,0 +1,82 @@
+﻿@model ProductManagement.Models.ProductClass
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 style="color:black">Details</h2>
+
+<div>
+    <h4>ProductClass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Short_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Short_Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Long_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Long_Description)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Small_Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Small_Image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Large_Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Large_Image)
+        </dd>*@
+
+    </dl>
+</div>
+<p>
+    
+    @Html.ActionLink("Back to List", "Index")
+</p>

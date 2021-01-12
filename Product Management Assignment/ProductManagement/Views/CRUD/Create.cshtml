@@ -1,0 +1,125 @@
+﻿@model ProductManagement.Models.Product
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2 style="color:black">Create</h2>
+
+
+@using (Html.BeginForm("Create", "CRUD", FormMethod.Post, new { enctype = "multipart/formdata" })) 
+{
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+        @*<h4>Product</h4>*@
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*creates a textbox gor the mentioned field*@
+                @Html.TextBoxFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @*Shows Validation Message*@
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Category, htmlAttributes: new { @class = "control-label col-md-2" })
+
+           
+            <div class="col-md-10">
+                @Html.DropDownList("Category", new List<SelectListItem>
+                {
+    new SelectListItem { Text = "Clothing", Value = "1"},
+    new SelectListItem { Text = "Footwear", Value = "2"},
+    new SelectListItem { Text = "Jewellery", Value = "3"},
+    new SelectListItem { Text = "Gadget", Value = "4"}
+}, "--Select--")
+                @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Quantity", new List<SelectListItem>
+                               {
+                   new SelectListItem { Text = "1", Value = "1"},
+                   new SelectListItem { Text = "2", Value = "2"},
+                   new SelectListItem { Text = "3", Value = "3"},
+                   new SelectListItem { Text = "4", Value = "4"},
+                   new SelectListItem { Text = "5", Value = "5"},
+                   new SelectListItem { Text = "6", Value = "6"},
+                   new SelectListItem { Text = "7", Value = "7"},
+                   new SelectListItem { Text = "8", Value = "8"},
+                   new SelectListItem { Text = "9", Value = "9"},
+                   new SelectListItem { Text = "10", Value = "10"}
+               }, "--Select--")               
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Short_Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Short_Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Short_Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Long_Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Long_Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Long_Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.Small_Image, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="file" >
+                @Html.ValidationMessageFor(model => model.Small_Image, "", new { @class = "text-danger" })
+
+
+            </div>
+        </div>
+            
+             
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.Large_Image, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="file">
+
+            </div>
+        </div>
+            
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Sumbit" class="btn btn-info" />
+                <a href="/CRUD/Index" class=" = btn btn-danger">Cancel</a>
+
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
