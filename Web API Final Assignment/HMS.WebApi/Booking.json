@@ -1,0 +1,32 @@
+[
+  {
+    "BookingDate": "2021-2-12T00:00:00",
+    "RoomId": 1,
+    "StatusOfBooking": "Definitive",
+    "HotelName": "Kajal"
+  },
+  {
+    "BookingDate": "2021-3-12T00:00:00",
+    "RoomId": 2,
+    "StatusOfBooking": "Cancelled ",
+    "HotelName": "Trident"
+  },
+  {
+    "BookingDate": "2021-1-11T00:00:00",
+    "RoomId": 3,
+    "StatusOfBooking": "Deleted",
+    "HotelName": "The Leela Palace"
+  },
+  {
+    "BookingDate": "2021-2-10T00:00:00",
+    "RoomId": 2,
+    "StatusOfBooking": "Definitive ",
+    "HotelName": "Trident"
+  },
+  {
+    "BookingDate": "2021-1-12T00:00:00",
+    "RoomId": 2,
+    "StatusOfBooking": "Definitive ",
+    "HotelName": "Trident"
+  }
+]

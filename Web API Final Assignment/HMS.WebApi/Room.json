@@ -1,0 +1,106 @@
+[
+  {
+    "Id": 1,
+    "RoomName": "suite",
+    "RoomCategory": 1,
+    "Price": 1000,
+    "IsActive": "True",
+    "CreatedDate": "2021-1-12T00:00:00",
+    "CreatedBy": "Paritosh Sharma",
+    "UpdatedDate": "2021-1-12T00:00:00",
+    "UpdatedBy": "Paritosh Sharma",
+    "HotelName": "Taj Lake Palace "
+
+  },
+  {
+    "Id": 1,
+    "RoomName": "Queen",
+    "RoomCategory": 2,
+    "Price": 5000,
+    "IsActive": "True",
+    "CreatedDate": "2021-1-12T00:00:00",
+    "CreatedBy": "Paritosh Sharma",
+    "UpdatedDate": "2021-1-12T00:00:00",
+    "UpdatedBy": "Paritosh Sharma",
+    "HotelName": "Taj Lake Palace "
+
+  },
+  {
+    "Id": 1,
+    "RoomName": "Quad",
+    "RoomCategory": 3,
+    "Price": 7000,
+    "IsActive": "True",
+    "CreatedDate": "2021-1-12T00:00:00",
+    "CreatedBy": "Paritosh Sharma",
+    "UpdatedDate": "2021-1-12T00:00:00",
+    "UpdatedBy": "Paritosh Sharma",
+    "HotelName": "Taj Lake Palace "
+
+  },
+  {
+    "Id": 6,
+    "RoomName": "Regular",
+    "RoomCategory": 2,
+    "Price": 3000,
+    "IsActive": "True",
+    "CreatedDate": "2021-1-12T00:00:00",
+    "CreatedBy": "Mira Kali",
+    "UpdatedDate": "2021-1-12T00:00:00",
+    "UpdatedBy": "Mira Kali",
+    "HotelName": "Oberoi Udaivilas"
+
+  },
+  {
+    "Id": 6,
+    "RoomName": "Double",
+    "RoomCategory": 3,
+    "Price": 4000,
+    "IsActive": "True",
+    "CreatedDate": "2021-1-12T00:00:00",
+    "CreatedBy": "Mira Kali",
+    "UpdatedDate": "2021-1-12T00:00:00",
+    "UpdatedBy": "Mira Kali",
+    "HotelName": "Oberoi Udaivilas"
+
+  },
+  {
+    "Id": 6,
+    "RoomName": "Regular",
+    "RoomCategory": 2,
+    "Price": 4000,
+    "IsActive": "True",
+    "CreatedDate": "2021-1-12T00:00:00",
+    "CreatedBy": "Mira Kali",
+    "UpdatedDate": "2021-1-12T00:00:00",
+    "UpdatedBy": "Mira Kali",
+    "HotelName": "Oberoi Udaivilas"
+
+  },
+  {
+    "Id": 4,
+    "RoomName": "Regular",
+    "RoomCategory": 1,
+    "Price": 5000,
+    "IsActive": "True",
+    "CreatedDate": "2021-1-12T00:00:00",
+    "CreatedBy": "Dimple Jain",
+    "UpdatedDate": "2021-1-12T00:00:00",
+    "UpdatedBy": "Dimple Jain",
+    "HotelName": "Swaroop Vilas"
+
+  },
+  {
+    "Id": 1,
+    "RoomName": "Regular",
+    "RoomCategory": 3,
+    "Price": 4000,
+    "IsActive": "True",
+    "CreatedDate": "2021-1-12T00:00:00",
+    "CreatedBy": "Jinaa Shah",
+    "UpdatedDate": "2021-1-12T00:00:00",
+    "UpdatedBy": "Daya Mehta",
+    "HotelName": "Taj Lake Palace "
+
+  }
+]

@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "cc2b843b-845c-43a0-858c-b5e0e9ace5c7",
+		"name": "WebApi Assignment Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44392/api/Hotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Room",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44392/api/Room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"10\",\r\n    \"HotelName\": \"The Sierra\",\r\n    \"Address\": \" j 31, Haridas Ji Ki Magri, Shavri Colony, Jaipur, Rajasthan 302006\",\r\n    \"City\": \"Jaipur\",\r\n    \"Pincode\":302006,\r\n    \"Contact\": \"993676584\",\r\n    \"ContactPerson\": \"Hira Mehur\",\r\n    \"Website\": \"https://sierraudaipur.com/\",\r\n    \"Facebook\": \"https://sierraudaipur.com/\",\r\n    \"Twitter\": \"https://sierraudaipur.com/\",\r\n    \"IsActive\": \"True\",\r\n    \"CreatedDate\": \"2021-1-12T00:00:00\",\r\n    \"CreatedBy\": \"Jinaa Shah\",\r\n    \"UpdatedDate\": \"2021-1-12T00:00:00\",\r\n    \"UpdatedBy\": \"Daya Mehta\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"9\",\r\n    \"HotelName\": \"Jagat Niwas\",\r\n    \"Address\": \"23-25 Behind Jagdish Temple, Lal Ghat Road, Jaipur, Rajasthan 302004\",\r\n    \"City\": \"Jaipur\",\r\n    \"Pincode\":302004,\r\n    \"Contact\": \"9876765847\",\r\n    \"ContactPerson\": \"Meena Parikh\",\r\n    \"Website\": \"https://www.jagatcollection.com/jagatniwas/\",\r\n    \"Facebook\": \"https://www.jagatcollection.com/jagatniwas/\",\r\n    \"Twitter\": \"https://www.jagatcollection.com/jagatniwas/\",\r\n    \"IsActive\": \"True\",\r\n    \"CreatedDate\": \"2021-1-12T00:00:00\",\r\n    \"CreatedBy\": \"San Johns\",\r\n    \"UpdatedDate\": \"2021-1-12T00:00:00\",\r\n    \"UpdatedBy\": \"San Johns\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 4,\r\n    \"RoomName\": \"Definitive\",\r\n    \"RoomCategory\": 1,\r\n    \"Price\": 6000,\r\n    \"IsActive\": \"True\",\r\n    \"CreatedDate\": \"2021-1-12T00:00:00\",\r\n    \"CreatedBy\": \"Dimple Jain\",\r\n    \"UpdatedDate\": \"2021-1-12T00:00:00\",\r\n    \"UpdatedBy\": \"Dimple Jain\",\r\n    \"HotelName\": \"Swaroop Vilas\"\r\n\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 2,\r\n    \"RoomName\": \"Definitive\",\r\n    \"RoomCategory\": 1,\r\n    \"Price\": 7000,\r\n    \"IsActive\": \"True\",\r\n    \"CreatedDate\": \"2021-1-12T00:00:00\",\r\n    \"CreatedBy\": \"Ketan Sharma\",\r\n    \"UpdatedDate\": \"2021-1-12T00:00:00\",\r\n    \"UpdatedBy\": \"Ketan Sharma\",\r\n    \"HotelName\": \"Trident\"\r\n\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Room",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Room"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44392/api/Hotel/SortHotel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 2,\r\n    \"RoomName\": \"Definitive\",\r\n    \"RoomCategory\": 1,\r\n    \"Price\": 7000,\r\n    \"IsActive\": \"True\",\r\n    \"CreatedDate\": \"2021-1-12T00:00:00\",\r\n    \"CreatedBy\": \"Ketan Sharma\",\r\n    \"UpdatedDate\": \"2021-1-12T00:00:00\",\r\n    \"UpdatedBy\": \"Ketan Sharma\",\r\n    \"HotelName\": \"Trident\"\r\n\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Hotel/SortHotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Hotel",
+						"SortHotel"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
